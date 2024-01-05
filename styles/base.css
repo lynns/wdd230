@@ -54,6 +54,10 @@ main {
     grid-template: auto auto auto auto / auto;
 }
 
+main h2 {
+    text-align: center;
+}
+
 .card {
     background-color: #fffcf2;
     margin: 0 0 16px 0;
