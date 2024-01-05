@@ -42,7 +42,7 @@ nav a {
     background-color: #fffcf2;
     border-radius: 8px;
     text-decoration: none;
-    color: #eb5e28;
+    color: #c34e21;
 }
 
 nav a:hover {
@@ -66,7 +66,7 @@ main h2 {
 }
 
 .card h3 {
-    background-color: #eb5e28;
+    background-color: #c34e21;
     color: #fffcf2;
     text-align: center;
     padding: 0.5rem;
