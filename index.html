@@ -4,13 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, World!</title>
+    <meta name="author" content="Stephen Lynn">
+    <meta name="description"
+        content="This site is the course assignment portal for all of Brother Lynn's assignments for the WDD 230 - Web Frontend Development course.">
+    <title>Brother Lynn - WDD 230 - Web Frontend Development</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
-<body>
+<body id="content">
+    <header>
+        <img src="images/StephenLynnSquare.jpg" alt="A headshot of Stephen Lynn">
+        <h1>Stephen Lynn</h1>
+    </header>
 
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML "Hello, World!" page.</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://byui.edu" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+            target="_blank">Scripture</a>
+    </nav>
+
+    <main>
+        <h2 style="text-align: center;">WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul style="display: none;">
+                <!-- <li></li> -->
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Rexburg</p>
+            <p>Cold</p>
+            <p>Page Visits: 15</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> | Stephen Lynn | Rexburg, ID</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    max-width: 640px;
+    background-color: #ccc5b9;
+    margin: 0 auto;
+    color: #252422;
+}
+
+header {
+    background-color: #403d39;
+    display: grid;
+    place-items: center;
+    grid-template: auto / 200px auto;
+    color: #fffcf2;
+    border-radius: 20px 20px 0 0;
+    margin-top: 16px;
+}
+
+header img {
+    margin: 20px;
+    border-radius: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 4px 16px;
+    margin: 10px 8px 0 0;
+    background-color: #fffcf2;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #eb5e28;
+}
+
+nav a:hover {
+    color: #252422;
+}
+
+main {
+    display: grid;
+    grid-template: auto auto auto auto / auto;
+}
+
+.card {
+    background-color: #fffcf2;
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    background-color: #eb5e28;
+    color: #fffcf2;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.card p {
+    text-align: center;
+}
+
+footer {
+    background-color: #403d39;
+    color: #fffcf2;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
