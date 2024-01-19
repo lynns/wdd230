@@ -8,6 +8,7 @@ body {
     max-width: 640px;
     background-color: #ccc5b9;
     margin: 0 auto;
+    padding: 0 16px;
     color: #252422;
 }
 
@@ -30,11 +31,23 @@ header h1 {
     text-align: center;
 }
 
+nav {
+    background-color: #fffcf2;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 0;
+}
+
 nav a {
     display: block;
     text-align: center;
     padding: 8px 16px;
-    margin: 10px 8px 0 0;
     background-color: #fffcf2;
     border-radius: 8px;
     text-decoration: none;
@@ -47,7 +60,7 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template: auto auto auto auto / auto;
+    grid-template: auto auto auto / auto;
 }
 
 main h2 {
@@ -71,6 +84,10 @@ main h2 {
 
 .card p {
     text-align: center;
+}
+
+.card li {
+    line-height: 2rem;
 }
 
 footer {
