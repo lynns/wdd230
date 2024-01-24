@@ -124,6 +124,11 @@ main h2 {
     line-height: 2rem;
 }
 
+section iframe {
+    border: 0;
+    width: 100%;
+}
+
 footer {
     background-color: var(--dark-gray);
     color: var(--light-text);
