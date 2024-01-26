@@ -97,7 +97,7 @@ main {
     grid-template: auto auto auto / auto;
 }
 
-main h2 {
+main>h2 {
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ main h2 {
     border-radius: 10px;
 }
 
-.card h3 {
+.card>h3 {
     background-color: var(--orange-theme);
     color: var(--light-text);
     text-align: center;
