@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --dark-gray: #1b365d;
+    --light-gray: #ccc5b9;
+    --light-text: #fffcf2;
+    --theme: #28568e;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: var(--dark-gray);
+    color: var(--light-text);
+    display: grid;
+    grid: auto auto / 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header>* {
+    margin: 1rem 2rem;
+}
+
+nav {
+    background-color: var(--light-text);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li a {
+    padding: 1rem;
+    color: var(--dark-gray);
+    display: block;
+}
+
+nav li:hover {
+    color: var(--theme);
+    background-color: var(--light-gray);
+}
+
+main {
+    display: grid;
+    grid: auto / auto;
+}
+
+section {
+    background-color: var(--light-gray);
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--light-text);
+    padding: 1rem;
+    border: var(--dark-gray) solid 1px;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--light-text);
+    text-align: center;
+    padding: 0.1rem 0 1rem 0;
+}

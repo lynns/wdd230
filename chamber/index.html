@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Lynn">
+    <meta name="description" content="Chamber of Commerce site for the city of Saratoga Spring, Utah.">
+    <title>Chamber of Commerce - Saratoga Springs</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="Chamber of Commerce - Saratoga Springs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lynns.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.saratogasprings-ut.gov/ImageRepository/Document?documentID=9722">
+
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/saratogasprings-logo.png" width="154" height="77" alt="Saratoga Springs Logo">
+        <h1>Chamber of Commerce<br> Saratoga Springs</h1>
+        <div id="SocialLinks">
+            <a href="https://www.facebook.com/SaratogaSpringsChamberOfCommerce/" target="_blank">
+                <img src="images/facebook-40.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/saratogaspringschamber/" target="_blank">
+                <img src="images/instagram-40.png" alt="Instagram">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#" id="MenuButton"></a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="CurrentEvents">
+
+            <div class="card">
+                <h3>Event 1</h3>
+                <p>Event 1 Description</p>
+            </div>
+            <div class="card">
+                <h3>Weather</h3>
+                <p>Weather Description</p>
+            </div>
+        </section>
+
+        <section id="Hero">
+            <!-- <img src="images/saratoga-springs-landscape.jpeg" width="100%" alt="Saratoga Springs Landscape"> -->
+            <p>Hero section</p>
+
+            <div class="card">
+                <h3>Join Us</h3>
+                <p>Join the Teton Chamber of Commerce and experience all of the helpful benefits.</p>
+                <button>Join Us!</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h3>Company 1</h3>
+                <p>Company 1 Description</p>
+            </div>
+            <div class="card">
+                <h3>Company 2</h3>
+                <p>Company 2 Description</p>
+            </div>
+            <div class="card">
+                <h3>Company 3</h3>
+                <p>Company 3 Description</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Teton Idaho Chamber of Commerce</h3>
+        <p>
+            123 Main Street <br>
+            Teton, ID 83451
+        </p>
+        <p>
+            info@tetonchamber.org <br>
+            208-458-4444
+        </p>
+
+        <div>
+            &copy; <span id="CopyrightYear"></span> | Stephen Lynn | Rexburg, ID | Last Updated: <span
+                id="LastUpdated">FILL
+                THIS IN</span>
+        </div>
+    </footer>
+</body>
+
+</html>
