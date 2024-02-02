@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulations</title>
+    <style>
+        .active {
+            background-color: lightgray;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <article></article>
+</body>
+
+<script lang="javascript">
+    const article = document.querySelector('article');
+    // article.textContent = 'textContent does not support <strong>HTML</strong> tags. The innerHTML property does.';
+
+    // article.innerHTML = 'innerHTML supports <strong>HTML</strong> tags. The textContent property does not.';
+
+    // article.style.fontSize = 'x-large';
+
+    // article.setAttribute('class', 'active');
+
+    // article.classList.add('active');
+
+    // const paragraph = document.createElement('p');
+
+    // article.appendChild(paragraph);
+    // article.append('Paragraph created in Javascript!');
+
+    // article.removeChild(paragraph);
+
+    // article.remove();
+</script>
+
+</html>
