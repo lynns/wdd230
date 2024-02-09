@@ -1,19 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    --dark-gray: #1b365d;
-    --light-gray: #ccc5b9;
-    --light-text: #fffcf2;
-    --theme: #28568e;
+    --banner-primary: #1b365d;
+    --banner-secondary: #28568e;
+    --text-primary: #000;
+    --text-secondary: #1b365d;
+    --text-light: #fffcf2;
+    --background-primary: #ccc5b9;
+    --background-secondary: #fffcf2;
+}
+
+:root .darkMode {
+    --banner-primary: #1b365d;
+    --banner-secondary: #ccc5b9;
+    --background-primary: #11223b;
+    --background-secondary: #28568e;
+    --text-primary: #fffcf2;
+    --text-secondary: #ccc5b9;
+    --text-light: #fffcf2;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+}
+
+a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-primary);
 }
 
 header {
-    background-color: var(--dark-gray);
-    color: var(--light-text);
+    background-color: var(--banner-primary);
+    color: var(--text-light);
     display: grid;
     grid: auto auto / 1fr 1fr;
     align-items: center;
@@ -29,7 +53,7 @@ header>* {
 }
 
 nav {
-    background-color: var(--light-text);
+    background-color: var(--background-secondary);
 }
 
 nav ul {
@@ -46,13 +70,29 @@ nav a {
 
 nav li a {
     padding: 1rem;
-    color: var(--dark-gray);
+    color: var(--text-secondary);
     display: block;
 }
 
 nav li:hover {
-    color: var(--theme);
-    background-color: var(--light-gray);
+    color: var(--banner-secondary);
+    background-color: var(--background-primary);
+}
+
+#DarkModeButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#DarkModeButton::before {
+    content: '🌙';
+}
+
+.darkMode #DarkModeButton::before {
+    content: '🔆';
 }
 
 main {
@@ -61,21 +101,40 @@ main {
 }
 
 section {
-    background-color: var(--light-gray);
+    background-color: var(--background-primary);
     margin: 0 0.5rem;
     padding: 0 1rem;
 }
 
 .card {
-    background-color: var(--light-text);
+    background-color: var(--background-secondary);
     padding: 1rem;
-    border: var(--dark-gray) solid 1px;
+    border: var(--banner-primary) solid 1px;
     margin: 0.5rem 0;
 }
 
+.card p {
+    font-size: 0.8rem;
+}
+
+.card h3 {
+    margin: 0 auto;
+}
+
+.contactDetails {
+    list-style-type: none;
+    text-align: center;
+}
+
+.weatherDetails {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
 footer {
-    background-color: var(--dark-gray);
-    color: var(--light-text);
+    background-color: var(--banner-primary);
+    color: var(--text-light);
     text-align: center;
     padding: 0.1rem 0 1rem 0;
 }
