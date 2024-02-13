@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event Handling</title>
+    <link rel="stylesheet" href="styles/javascriptEvents.css">
+</head>
+
+<body>
+
+    <div id="Top">
+        Top
+
+        <div id="Middle">
+            Middle
+
+            <div id="Bottom">
+                Bottom
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const topElement = document.getElementById('Top');
+        const middleElement = document.getElementById('Middle');
+        const bottomElement = document.getElementById('Bottom');
+
+        topElement.addEventListener('click', (event) => {
+            alert('Top clicked');
+            event.preventDefault();
+        });
+
+        middleElement.addEventListener('click', (event) => {
+            alert('Middle clicked');
+            // e.stopPropagation();
+        }, { "once": true });
+        // capture = true
+        // option = {"once": true}
+
+        bottomElement.addEventListener('click', (event) => {
+            alert('Bottom clicked');
+        });
+
+        topElement.addEventListener('click', (event) => {
+            alert('Top clicked (2nd Listener)');
+        });
+    </script>
+</body>
+
+</html>
