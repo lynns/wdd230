@@ -30,10 +30,18 @@
         <h1>Chamber of Commerce<br> Saratoga Springs</h1>
         <div id="SocialLinks">
             <a href="https://www.facebook.com/SaratogaSpringsChamberOfCommerce/" target="_blank">
-                <img src="images/facebook-40.png" alt="Facebook">
+                <picture>
+                    <source media="(min-width: 40px)" srcset="images/facebook-40.png" type="image/png">
+                    <source media="(min-width: 200px)" srcset="images/facebook-200.png" type="image/png">
+                    <img src="images/facebook-200.png" alt="Facebook" width="40">
+                </picture>
             </a>
             <a href="https://www.instagram.com/saratogaspringschamber/" target="_blank">
-                <img src="images/instagram-40.png" alt="Instagram">
+                <picture>
+                    <source media="(min-width: 40px)" srcset="images/instagram-40.png" type="image/png">
+                    <source media="(min-width: 200px)" srcset="images/instagram-150.png" type="image/png">
+                    <img src="images/instagram-150.png" alt="Instagram" width="40">
+                </picture>
             </a>
         </div>
         <a href="#" id="DarkModeButton" title="Dark mode toggle button"></a>
@@ -77,11 +85,9 @@
         </section>
 
         <section id="Hero">
-            <!-- <img src="images/saratoga-springs-landscape.jpeg" width="100%" alt="Saratoga Springs Landscape"> -->
-            <p>Hero section</p>
+            <img src="images/saratoga-springs-landscape.webp" width="100%" alt="Saratoga Springs Landscape">
 
             <div class="card">
-                <h3>Join Us</h3>
                 <p>Join the Teton Chamber of Commerce and experience all of the helpful benefits.</p>
                 <button>Join Us!</button>
             </div>
