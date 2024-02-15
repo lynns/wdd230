@@ -21,6 +21,7 @@
     <meta property="og:image" content="https://www.saratogasprings-ut.gov/ImageRepository/Document?documentID=9722">
 
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 
 <body>
@@ -36,6 +37,7 @@
             </a>
         </div>
         <a href="#" id="DarkModeButton" title="Dark mode toggle button"></a>
+        <div id="meet-greet"></div>
     </header>
 
     <nav>
@@ -66,9 +68,10 @@
             <div class="card">
                 <h3>Weather</h3>
                 <ul class="weatherDetails">
-                    <li><span class="label">Temperature:</span> 34°F</li>
-                    <li><span class="label">Humidity:</span> 23%</li>
-                    <li><span class="label">Wind Chill:</span> N/A</li>
+                    <li><img src="" id="WeatherIcon"> <span id="WeatherDesc"></span></li>
+                    <li><span class="label">Temperature:</span> <span id="Temperature">34</span>°F</li>
+                    <li><span class="label">Windspeed:</span> <span id="Windspeed">23</span>mph</li>
+                    <li><span class="label">Wind Chill:</span> <span id="Windchill">N/A</span></li>
                 </ul>
             </div>
         </section>

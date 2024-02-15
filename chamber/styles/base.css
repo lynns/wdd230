@@ -124,12 +124,25 @@ section {
 .contactDetails {
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .weatherDetails {
     list-style-type: none;
     margin: 0;
     padding: 0.5rem 0;
+}
+
+#WeatherIcon {
+    margin-top: -30px;
+}
+
+#WeatherDesc {
+    text-align: center;
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 20px;
 }
 
 footer {
