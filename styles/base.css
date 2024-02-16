@@ -103,12 +103,24 @@ main>h2 {
 }
 
 #HeroImage {
+    position: relative;
     display: inline-block;
 }
 
 #HeroImage img {
     width: 100%;
     display: block;
+}
+
+#HeroTitle {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border: 1px solid var(--banner-primary);
+    padding: 0.5rem 1rem;
+    background-color: #00000020;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .card {
