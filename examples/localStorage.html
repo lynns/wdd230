@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Example</title>
+</head>
+
+<body>
+    <h1>LocalStorage Example</h1>
+
+    <p>Enter your name and click the save button. Your name will be saved in the local storage and will be displayed
+        when you visit this page again.</p>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <p>
+        <input type="radio" name="storage" value="localStorage" checked> Local Storage
+        <input type="radio" name="storage" value="sessionStorage"> Session Storage
+        <input type="radio" name="storage" value="cookie"> Cookie
+    </p>
+
+    <button onclick="saveName()">Save</button>
+    <button onclick="clearAllStorage()">Clear All Storage</button>
+
+    <script>
+        const nameElement = document.getElementById('name');
+        const radioButtons = document.querySelector('input[name="storage"]:checked');
+
+        function saveName() {
+            var name = nameElement.value;
+            let storageType = radioButtons.value;
+
+            if (storageType === 'localStorage') {
+                saveNameLocalStorage(name);
+            } else if (storageType === 'sessionStorage') {
+                saveNameSessionStorage(name);
+            } else if (storageType === 'cookie') {
+                saveNameCookie(name);
+            }
+        }
+
+        function saveNameLocalStorage(name) {
+            localStorage.setItem('name', name);
+            alert(`Name saved to localStorage successfully: ${name}`);
+        }
+
+        function saveNameSessionStorage(name) {
+            sessionStorage.setItem('name', name);
+            alert(`Name saved to sessionStorage successfully: ${name}`);
+        }
+
+        function saveNameCookie(name) {
+            document.cookie = `name=${name}`;
+            alert(`Name saved to cookie successfully: ${name}`);
+        }
+
+        function clearAllStorage() {
+            localStorage.clear();
+            sessionStorage.clear();
+            document.cookie = 'name=; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+            alert('All storage cleared successfully');
+        }
+
+        window.onload = function () {
+            let localName = localStorage.getItem('name');
+            let sessionName = sessionStorage.getItem('name');
+            let cookieName = document.cookie.replace(/(?:(?:^|.*;\s*)name\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+            alert(`Welcome back!\nlocalName=${localName}\nsessionName=${sessionName}\ncookieName=${cookieName}`);
+        }
+    </script>
+</body>
+
+</html>

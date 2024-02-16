@@ -25,4 +25,6 @@ function setWindChill(windSpeed, temperature) {
     windChillSpan.innerHTML = windChillMessage;
 }
 
-setWindChill(document.querySelector("#Windspeed").textContent, document.querySelector("#Temperature").textContent);
+const windSpeed = document.querySelector("#Windspeed").textContent;
+const temperature = document.querySelector("#Temperature").textContent;
+setWindChill(windSpeed, temperature);

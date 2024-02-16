@@ -94,11 +94,21 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template: auto auto auto / auto;
+    grid-template: auto auto auto auto / auto;
+    max-width: 1024px;
 }
 
 main>h2 {
     text-align: center;
+}
+
+#HeroImage {
+    display: inline-block;
+}
+
+#HeroImage img {
+    width: 100%;
+    display: block;
 }
 
 .card {
