@@ -25,117 +25,133 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/saratogasprings-logo.png" width="154" height="77" alt="Saratoga Springs Logo">
-        <h1>Chamber of Commerce<br> Saratoga Springs</h1>
-        <div id="SocialLinks">
-            <a href="https://www.facebook.com/SaratogaSpringsChamberOfCommerce/" target="_blank">
+    <div id="Content">
+        <header>
+            <img src="images/saratogasprings-logo.png" width="154" height="77" alt="Saratoga Springs Logo">
+            <h1>Chamber of Commerce<br> Saratoga Springs</h1>
+            <div id="SocialLinks">
+                <a href="https://www.facebook.com/SaratogaSpringsChamberOfCommerce/" target="_blank">
+                    <picture>
+                        <source media="(min-width: 40px)" srcset="images/facebook-40.png" type="image/png">
+                        <source media="(min-width: 200px)" srcset="images/facebook-200.png" type="image/png">
+                        <img src="images/facebook-200.png" alt="Facebook" width="40">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/saratogaspringschamber/" target="_blank">
+                    <picture>
+                        <source media="(min-width: 40px)" srcset="images/instagram-40.png" type="image/png">
+                        <source media="(min-width: 200px)" srcset="images/instagram-150.png" type="image/png">
+                        <img src="images/instagram-150.png" alt="Instagram" width="40">
+                    </picture>
+                </a>
+            </div>
+            <a href="#" id="DarkModeButton" title="Dark mode toggle button"></a>
+            <div id="meet-greet"></div>
+        </header>
+
+        <nav>
+            <a href="#" id="MenuButton"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="CurrentEvents">
+                <div class="card">
+                    <h3>Food Trucks in the Park</h3>
+                    <p>Every Monday there will be a wide variety of food trucks parked in Neptune park. Come hang out
+                        with
+                        your neighbors, let the kids play in the park, and enjoy some tasty treats.</p>
+                </div>
+                <div class="card">
+                    <h3>Saratoga Splash Days</h3>
+                    <p>Join us this Saturday for "Saratoga Splash," our community's annual water extravaganza! Dive into
+                        a
+                        day filled with water balloon tosses, slip 'n slides, and a friendly rubber duck race at the
+                        neighborhood park. Bring your swimsuit, sunscreen, and a splash of enthusiasm for a refreshing
+                        day
+                        of fun under the sun!</p>
+                </div>
+                <div class="card">
+                    <h3>Weather</h3>
+                    <ul class="weatherDetails">
+                        <li><img src="" id="WeatherIcon"> <span id="WeatherDesc"></span></li>
+                        <li><span class="label">Temperature:</span> <span id="Temperature">34</span>°F</li>
+                        <li><span class="label">Windspeed:</span> <span id="Windspeed">23</span>mph</li>
+                        <li><span class="label">Wind Chill:</span> <span id="Windchill">N/A</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="Hero">
                 <picture>
-                    <source media="(min-width: 40px)" srcset="images/facebook-40.png" type="image/png">
-                    <source media="(min-width: 200px)" srcset="images/facebook-200.png" type="image/png">
-                    <img src="images/facebook-200.png" alt="Facebook" width="40">
+                    <source media="(min-width: 300px)" srcset="images/saratoga-springs-landscape-small.webp"
+                        type="image/webp">
+                    <source media="(min-width: 400px)" srcset="images/saratoga-springs-landscape-medium.webp"
+                        type="image/webp">
+                    <source media="(min-width: 600px)" srcset="images/saratoga-springs-landscape-large.webp"
+                        type="image/webp">
+                    <img src="images/saratoga-springs-landscape.webp" width="100%" alt="Saratoga Springs Landscape">
                 </picture>
-            </a>
-            <a href="https://www.instagram.com/saratogaspringschamber/" target="_blank">
-                <picture>
-                    <source media="(min-width: 40px)" srcset="images/instagram-40.png" type="image/png">
-                    <source media="(min-width: 200px)" srcset="images/instagram-150.png" type="image/png">
-                    <img src="images/instagram-150.png" alt="Instagram" width="40">
-                </picture>
-            </a>
-        </div>
-        <a href="#" id="DarkModeButton" title="Dark mode toggle button"></a>
-        <div id="meet-greet"></div>
-    </header>
 
-    <nav>
-        <a href="#" id="MenuButton"></a>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+                <div class="card">
+                    <p>Join the Teton Chamber of Commerce and experience all of the helpful benefits.</p>
+                    <button>Join Us!</button>
+                </div>
+            </section>
 
-    <main>
-        <section id="CurrentEvents">
-            <div class="card">
-                <h3>Food Trucks in the Park</h3>
-                <p>Every Monday there will be a wide variety of food trucks parked in Neptune park. Come hang out with
-                    your neighbors, let the kids play in the park, and enjoy some tasty treats.</p>
+            <section>
+                <div class="card">
+                    <h3>Quick Quack Carwash</h3>
+                    <p>
+                        Visit QuickQuack Carwash for a speedy and spotless clean that'll have your car shining like new
+                        in
+                        minutes. With state-of-the-art equipment and friendly staff, enjoy a convenient and efficient
+                        wash
+                        experience that leaves your vehicle looking its best.</p>
+                    <ul class="contactDetails">
+                        <li><a href="">Website</a></li>
+                        <li><a href="mailto:">quaker@quickquack.com</a></li>
+                        <li>801-345-9393</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Tiny Tots Day Care</h3>
+                    <p>At Tiny Tots Day Care, we provide a nurturing and safe environment where your little ones can
+                        learn,
+                        play, and grow. Our experienced caregivers offer personalized attention and engaging activities
+                        tailored to support your child's development.</p>
+                    <ul class="contactDetails">
+                        <li><a href="">Website</a></li>
+                        <li><a href="mailto:">tater@tinytots.com</a></li>
+                        <li>801-432-9941</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                123 Main Street <br>
+                Saratoga Springs, UT 84045
+            </p>
+            <p>
+                info@sschamber.org <br>
+                801-458-4444
+            </p>
+
+            <div>
+                &copy; <span id="CopyrightYear"></span> | Stephen Lynn | Saratoga Springs, UT | Last Updated: <span
+                    id="LastUpdated">FILL
+                    THIS IN</span>
             </div>
-            <div class="card">
-                <h3>Saratoga Splash Days</h3>
-                <p>Join us this Saturday for "Saratoga Splash," our community's annual water extravaganza! Dive into a
-                    day filled with water balloon tosses, slip 'n slides, and a friendly rubber duck race at the
-                    neighborhood park. Bring your swimsuit, sunscreen, and a splash of enthusiasm for a refreshing day
-                    of fun under the sun!</p>
-            </div>
-            <div class="card">
-                <h3>Weather</h3>
-                <ul class="weatherDetails">
-                    <li><img src="" id="WeatherIcon"> <span id="WeatherDesc"></span></li>
-                    <li><span class="label">Temperature:</span> <span id="Temperature">34</span>°F</li>
-                    <li><span class="label">Windspeed:</span> <span id="Windspeed">23</span>mph</li>
-                    <li><span class="label">Wind Chill:</span> <span id="Windchill">N/A</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="Hero">
-            <img src="images/saratoga-springs-landscape.webp" width="100%" alt="Saratoga Springs Landscape">
-
-            <div class="card">
-                <p>Join the Teton Chamber of Commerce and experience all of the helpful benefits.</p>
-                <button>Join Us!</button>
-            </div>
-        </section>
-
-        <section>
-            <div class="card">
-                <h3>Quick Quack Carwash</h3>
-                <p>
-                    Visit QuickQuack Carwash for a speedy and spotless clean that'll have your car shining like new in
-                    minutes. With state-of-the-art equipment and friendly staff, enjoy a convenient and efficient wash
-                    experience that leaves your vehicle looking its best.</p>
-                <ul class="contactDetails">
-                    <li><a href="">Website</a></li>
-                    <li><a href="mailto:">quaker@quickquack.com</a></li>
-                    <li>801-345-9393</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Tiny Tots Day Care</h3>
-                <p>At Tiny Tots Day Care, we provide a nurturing and safe environment where your little ones can learn,
-                    play, and grow. Our experienced caregivers offer personalized attention and engaging activities
-                    tailored to support your child's development.</p>
-                <ul class="contactDetails">
-                    <li><a href="">Website</a></li>
-                    <li><a href="mailto:">tater@tinytots.com</a></li>
-                    <li>801-432-9941</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>
-            123 Main Street <br>
-            Saratoga Springs, UT 84045
-        </p>
-        <p>
-            info@sschamber.org <br>
-            801-458-4444
-        </p>
-
-        <div>
-            &copy; <span id="CopyrightYear"></span> | Stephen Lynn | Saratoga Springs, UT | Last Updated: <span
-                id="LastUpdated">FILL
-                THIS IN</span>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>

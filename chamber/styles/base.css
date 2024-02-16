@@ -26,6 +26,11 @@ body {
     background-color: var(--background-primary);
 }
 
+#Content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 a {
     color: var(--text-secondary);
     text-decoration: none;
