@@ -22,12 +22,13 @@
 
     <button onclick="saveName()">Save</button>
     <button onclick="clearAllStorage()">Clear All Storage</button>
+    <button onclick="showValues()">Show Storage</button>
 
     <script>
         const nameElement = document.getElementById('name');
-        const radioButtons = document.querySelector('input[name="storage"]:checked');
 
         function saveName() {
+            const radioButtons = document.querySelector('input[name="storage"]:checked');
             var name = nameElement.value;
             let storageType = radioButtons.value;
 
@@ -62,12 +63,16 @@
             alert('All storage cleared successfully');
         }
 
-        window.onload = function () {
+        function showValues() {
             let localName = localStorage.getItem('name');
             let sessionName = sessionStorage.getItem('name');
             let cookieName = document.cookie.replace(/(?:(?:^|.*;\s*)name\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 
             alert(`Welcome back!\nlocalName=${localName}\nsessionName=${sessionName}\ncookieName=${cookieName}`);
+        }
+
+        window.onload = function () {
+            showValues();
         }
     </script>
 </body>

@@ -4,3 +4,7 @@ const yearString = date.toLocaleDateString('en-US', {
 });
 document.querySelector("#copyrightYear").innerHTML = yearString;
 document.querySelector("#lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
+
+let count = parseInt(localStorage.getItem('counter'), 10) || 0;
+localStorage.setItem('counter', ++count);
+document.querySelector("#VisitCount").textContent = count;
