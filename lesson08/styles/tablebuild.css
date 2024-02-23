@@ -1,0 +1,38 @@
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+tbody th,
+tbody td {
+    border: 1px solid #ccc;
+}
+
+tr th {
+    background-color: #555;
+    color: #fff;
+}
+
+tr th:first-child {
+    background-color: #000;
+}
+
+tr:first-child th,
+.highlight {
+    background-color: #000;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
