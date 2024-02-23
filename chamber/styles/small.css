@@ -67,4 +67,12 @@
         padding: 1rem 0;
         margin: 0;
     }
+
+    #Discover {
+        grid: auto / auto;
+    }
+
+    #Discover section {
+        margin: auto 1rem auto 1rem;
+    }
 }
