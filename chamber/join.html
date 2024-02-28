@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Lynn">
+    <meta name="description" content="Chamber of Commerce site for the city of Saratoga Spring, Utah.">
+    <title>Chamber of Commerce - Saratoga Springs - Join</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <meta property="og:title" content="Chamber of Commerce - Saratoga Springs - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lynns.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.saratogasprings-ut.gov/ImageRepository/Document?documentID=9722">
+
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <div id="Content">
+        <header>
+            <img src="images/saratogasprings-logo.png" width="154" height="77" alt="Saratoga Springs Logo">
+            <h1>Chamber of Commerce<br> Saratoga Springs</h1>
+            <div id="SocialLinks">
+                <a href="https://www.facebook.com/SaratogaSpringsChamberOfCommerce/" target="_blank">
+                    <picture>
+                        <source media="(min-width: 40px)" srcset="images/facebook-40.png" type="image/png">
+                        <source media="(min-width: 200px)" srcset="images/facebook-200.png" type="image/png">
+                        <img src="images/facebook-200.png" alt="Facebook" width="40">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/saratogaspringschamber/" target="_blank">
+                    <picture>
+                        <source media="(min-width: 40px)" srcset="images/instagram-40.png" type="image/png">
+                        <source media="(min-width: 200px)" srcset="images/instagram-150.png" type="image/png">
+                        <img src="images/instagram-150.png" alt="Instagram" width="40">
+                    </picture>
+                </a>
+            </div>
+            <a href="#" id="DarkModeButton" title="Dark mode toggle button"></a>
+            <div id="meet-greet"></div>
+        </header>
+
+        <nav>
+            <a href="#" id="MenuButton"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="JoinForm">
+                <div class="card">
+                    <form method="get" action="thankyou.html">
+                        <label>
+                            First Name:
+                            <input type="text" name="firstName" id="firstName" required>
+                        </label>
+                        <label>
+                            Last Name:
+                            <input type="text" name="lastName" id="lastName" required>
+                        </label>
+                        <label>
+                            Title or Position:
+                            <input type="text" name="titleOrPosition" id="titleOrPosition" pattern="[A-Za-z\-\s]{7,}"
+                                required>
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email" id="email" placeholder="me@test.com" required>
+                        </label>
+                        <label>
+                            Mobile Phone:
+                            <input type="tel" name="phone" id="phone" required>
+                        </label>
+                        <label>
+                            Business Name:
+                            <input type="text" name="businessName" id="businessName" required>
+                        </label>
+
+                        Membership Level:
+                        <label>
+                            <input type="radio" name="membershipLevel" id="membershipLevel" value="np" required> NP
+                            Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membershipLevel" id="membershipLevel" value="bronze" required>
+                            Bronze Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membershipLevel" id="membershipLevel" value="silver" required>
+                            Silver Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membershipLevel" id="membershipLevel" value="gold" required> Gold
+                            Membership
+                        </label>
+
+                        <label for"businessDescription">
+                            Business Description:
+                            <textarea name="businessDescription" id="businessDescription" required></textarea>
+                        </label>
+                        <input type="hidden" name="loadedDate" id="loadedDate">
+                        <input type="submit" value="Join" id="submitButton">
+                    </form>
+                </div>
+            </section>
+
+            <section id="MembershipDetails">
+                <div class="card np2">
+                    <h2>Non-Profit Membership</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, at officia minus, expedita
+                        molestiae temporibus alias nemo quos quaerat iste optio commodi quibusdam, natus libero
+                        consequatur tempora quo autem ea non error? Perspiciatis cumque consequatur labore velit
+                        blanditiis illum suscipit sint explicabo, ipsam, ipsum iste a voluptate distinctio impedit eius
+                        aliquid quod ad! At odio voluptatum recusandae! Reiciendis veritatis aspernatur dolorum repellat
+                        laboriosam aperiam similique expedita rem, et ducimus sapiente voluptatum illo. Cupiditate
+                        facere odio at consequatur explicabo laborum voluptas possimus nam. Tenetur vel laboriosam quasi
+                        porro, sequi, mollitia dicta hic minima ipsum debitis voluptatum eum ab asperiores maiores modi!
+                    </p>
+                </div>
+                <div class="card bronze">
+                    <h2>Bronze Membership</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, at officia minus, expedita
+                        molestiae temporibus alias nemo quos quaerat iste optio commodi quibusdam, natus libero
+                        consequatur tempora quo autem ea non error? Perspiciatis cumque consequatur labore velit
+                        blanditiis illum suscipit sint explicabo, ipsam, ipsum iste a voluptate distinctio impedit eius
+                        aliquid quod ad! At odio voluptatum recusandae! Reiciendis veritatis aspernatur dolorum repellat
+                        laboriosam aperiam similique expedita rem, et ducimus sapiente voluptatum illo. Cupiditate
+                        facere odio at consequatur explicabo laborum voluptas possimus nam. Tenetur vel laboriosam quasi
+                        porro, sequi, mollitia dicta hic minima ipsum debitis voluptatum eum ab asperiores maiores modi!
+                    </p>
+                </div>
+                <div class="card silver">
+                    <h2>Silver Membership</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, at officia minus, expedita
+                        molestiae temporibus alias nemo quos quaerat iste optio commodi quibusdam, natus libero
+                        consequatur tempora quo autem ea non error? Perspiciatis cumque consequatur labore velit
+                        blanditiis illum suscipit sint explicabo, ipsam, ipsum iste a voluptate distinctio impedit eius
+                        aliquid quod ad! At odio voluptatum recusandae! Reiciendis veritatis aspernatur dolorum repellat
+                        laboriosam aperiam similique expedita rem, et ducimus sapiente voluptatum illo. Cupiditate
+                        facere odio at consequatur explicabo laborum voluptas possimus nam. Tenetur vel laboriosam quasi
+                        porro, sequi, mollitia dicta hic minima ipsum debitis voluptatum eum ab asperiores maiores modi!
+                    </p>
+                </div>
+                <div class="card gold">
+                    <h2>Gold Membership</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, at officia minus, expedita
+                        molestiae temporibus alias nemo quos quaerat iste optio commodi quibusdam, natus libero
+                        consequatur tempora quo autem ea non error? Perspiciatis cumque consequatur labore velit
+                        blanditiis illum suscipit sint explicabo, ipsam, ipsum iste a voluptate distinctio impedit eius
+                        aliquid quod ad! At odio voluptatum recusandae! Reiciendis veritatis aspernatur dolorum repellat
+                        laboriosam aperiam similique expedita rem, et ducimus sapiente voluptatum illo. Cupiditate
+                        facere odio at consequatur explicabo laborum voluptas possimus nam. Tenetur vel laboriosam quasi
+                        porro, sequi, mollitia dicta hic minima ipsum debitis voluptatum eum ab asperiores maiores modi!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                123 Main Street <br>
+                Saratoga Springs, UT 84045
+            </p>
+            <p>
+                info@sschamber.org <br>
+                801-458-4444
+            </p>
+
+            <div>
+                &copy; <span id="CopyrightYear"></span> | Stephen Lynn | Saratoga Springs, UT | Last Updated: <span
+                    id="LastUpdated">FILL
+                    THIS IN</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

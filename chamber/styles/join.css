@@ -1,0 +1,98 @@
+@media screen and (min-width: 600px) {
+    #JoinForm {
+        grid-column: 1 / 3;
+    }
+
+    .np #JoinForm,
+    .bronze #JoinForm,
+    .silver #JoinForm,
+    .gold #JoinForm {
+        grid-column: 1 / 2;
+    }
+
+    .np #MembershipDetails,
+    .bronze #MembershipDetails,
+    .silver #MembershipDetails,
+    .gold #MembershipDetails {
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #JoinForm {
+        grid-column: 1 / 4;
+    }
+
+    .np #JoinForm,
+    .bronze #JoinForm,
+    .silver #JoinForm,
+    .gold #JoinForm {
+        grid-column: 1 / 3;
+    }
+
+    .np #MembershipDetails,
+    .bronze #MembershipDetails,
+    .silver #MembershipDetails,
+    .gold #MembershipDetails {
+        grid-column: 3 / 4;
+    }
+}
+
+#MembershipDetails .np2,
+#MembershipDetails .bronze,
+#MembershipDetails .silver,
+#MembershipDetails .gold {
+    display: none;
+}
+
+.np #MembershipDetails .np2,
+.bronze #MembershipDetails .bronze,
+.silver #MembershipDetails .silver,
+.gold #MembershipDetails .gold {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 1rem 0;
+}
+
+label input {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+label input[type="radio"] {
+    width: inherit;
+    display: inline;
+    margin: 0;
+}
+
+label input:required {
+    border: 1px solid var(--text-secondary);
+    border-left: 6px solid rgb(183, 1, 1);
+}
+
+label input:required:valid {
+    border-left: 6px solid rgb(1, 154, 1);
+}
+
+textarea {
+    display: block;
+}
+
+#submitButton {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 1rem;
+    background-color: var(--text-secondary);
+    color: #fff;
+    font-size: 1.2rem;
+}

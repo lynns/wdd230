@@ -1,0 +1,52 @@
+form {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0;
+}
+
+label input {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+label input:required {
+    border: 1px solid var(--orange-theme);
+    border-left: 6px solid var(--orange-theme);
+}
+
+label input:required:valid {
+    border-left: 6px solid rgb(1, 154, 1);
+}
+
+#submitButton {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--orange-theme);
+    border-radius: 1rem;
+    background-color: var(--orange-theme);
+    color: #fff;
+}
+
+#passwordError {
+    background-color: rgb(198, 2, 2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+    display: none;
+}
+
+#passwordError.show {
+    display: block;
+}

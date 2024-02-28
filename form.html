@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Stephen Lynn">
+    <meta name="description" content="Form">
+    <title>Brother Lynn - WDD 230 - Form</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body id="content">
+    <header>
+        <img src="images/StephenLynnSquare.jpg" alt="A headshot of Stephen Lynn">
+        <h1>Stephen Lynn</h1>
+    </header>
+
+    <nav>
+        <a href="#" id="menu"></a>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="https://byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="card">
+                <form method="get" action="record.html">
+                    <label>
+                        Username:
+                        <input type="text" name="username" id="username" required>
+                    </label>
+                    <label>
+                        Password:
+                        <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}">
+                    </label>
+                    <label>
+                        Password (again):
+                        <input type="password" name="password2" id="password2" required pattern="[A-Za-z0-9]{8,}">
+                        <div id="passwordError">Passwords do not match</div>
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                            title="Please enter a valid email address">
+                    </label>
+                    <label>
+                        Page Rating: <span id="ratingLabel"></span>
+                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+                    </label>
+                    <input type="submit" value="Create Account" id="submitButton">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="copyrightYear"></span> | Stephen Lynn | Rexburg, ID</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
