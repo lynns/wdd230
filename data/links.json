@@ -48,6 +48,15 @@
                     "url": "lesson08/tablebuild.html"
                 }
             ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "title": "Prophet Cards",
+                    "url": "lesson09/prophets.html"
+                }
+            ]
         }
     ]
 }

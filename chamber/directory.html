@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stephen Lynn">
     <meta name="description" content="Chamber of Commerce site for the city of Saratoga Spring, Utah.">
-    <title>Chamber of Commerce - Saratoga Springs - Thank You</title>
+    <title>Chamber of Commerce - Saratoga Springs - Directory</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/join.css">
 
-    <meta property="og:title" content="Chamber of Commerce - Saratoga Springs - Thank You">
+    <meta property="og:title" content="Chamber of Commerce - Saratoga Springs">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lynns.github.io/wdd230/chamber">
     <meta property="og:image" content="https://www.saratogasprings-ut.gov/ImageRepository/Document?documentID=9722">
 
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -60,12 +60,12 @@
             </ul>
         </nav>
 
-        <main>
-            <section id="JoinForm">
-                <div class="card">
-                    Thank You for joining!
-                </div>
-            </section>
+        <main class="grid">
+            <div id="DisplayButtons">
+                <button id="GridButton">Grid</button>
+                <button id="LineItemButton">Line Item</button>
+            </div>
+            <div id="Companies"></div>
         </main>
 
         <footer>

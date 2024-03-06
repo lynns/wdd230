@@ -13,14 +13,19 @@ function displayProphets(prophets) {
         const card = document.createElement('section');
         const fullName = document.createElement('h2');
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        const birth = document.createElement('p');
+        birth.textContent = `Date of Birth: ${prophet.birthdate}`;
+        const birthPlace = document.createElement('p');
+        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
         const portrait = document.createElement('img');
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '200');
-        portrait.setAttribute('height', '200');
 
         card.appendChild(fullName);
+        card.appendChild(birth);
+        card.appendChild(birthPlace);
         card.appendChild(portrait);
         cards.appendChild(card);
     });

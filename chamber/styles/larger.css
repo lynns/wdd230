@@ -3,4 +3,7 @@
         display: grid;
         grid: auto / 1fr 2fr 1fr;
     }
-}
+
+    #Companies {
+        grid-column: 1 / 4;
+    }
