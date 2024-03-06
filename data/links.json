@@ -1,0 +1,53 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "title": "Media Queries",
+                    "url": "lesson01/media-query.html"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "title": "Design Principles",
+                    "url": "lesson02/design.html"
+                },
+                {
+                    "title": "CSS Selector Results",
+                    "url": "images/cssSelectorResults.png"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "title": "Chamber Site Plan",
+                    "url": "lesson03/chamber-site-plan.html"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "title": "Book of Mormon Chapters",
+                    "url": "lesson05/bom.html"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "title": "Table Build",
+                    "url": "lesson08/tablebuild.html"
+                }
+            ]
+        }
+    ]
+}
