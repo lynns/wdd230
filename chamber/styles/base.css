@@ -79,7 +79,8 @@ nav li a {
     display: block;
 }
 
-nav li:hover {
+nav li:hover,
+nav li.current {
     color: var(--banner-secondary);
     background-color: var(--background-primary);
 }
