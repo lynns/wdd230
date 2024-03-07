@@ -57,6 +57,15 @@
                     "url": "lesson09/prophets.html"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "title": "Weather",
+                    "url": "lesson10/weather.html"
+                }
+            ]
         }
     ]
 }
