@@ -75,4 +75,12 @@
     #Discover section {
         margin: auto 1rem auto 1rem;
     }
+
+    .list #Companies .card {
+        flex-direction: column;
+    }
+
+    main {
+        display: block;
+    }
 }
