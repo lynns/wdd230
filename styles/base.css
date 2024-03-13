@@ -157,3 +157,14 @@ footer {
     padding: 20px;
     border-radius: 0 0 20px 20px;
 }
+
+#WeatherContainer {
+    border: 1px solid var(--banner-primary);
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--text-secondary);
+}
+
+#WeatherContainer p {
+    margin: 0;
+}
