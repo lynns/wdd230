@@ -46,3 +46,14 @@ if (welcomeMessage) {
 
     localStorage.setItem("lastVisit", now);
 }
+
+function controlBanner() {
+    const banner = document.querySelector("#Banner");
+
+    const day = new Date().getDay();
+    if (day >= 1 && day <= 3) {
+        banner.classList.add("show");
+    }
+
+}
+controlBanner();
