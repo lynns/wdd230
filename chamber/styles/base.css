@@ -158,6 +158,9 @@ footer {
     padding: 0.1rem 0 1rem 0;
 }
 
+#Hero {
+    margin-top: 0.5rem;
+}
 
 #Discover {
     grid: auto / 1fr 1fr;
@@ -237,4 +240,15 @@ footer {
 .list #LineItemButton {
     background-color: var(--banner-primary);
     color: white;
+}
+
+#ThreeDayForecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.weatherDetails {
+    text-align: center;
+    font-size: 0.8rem;
 }
